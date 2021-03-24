@@ -1,23 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
-
+import './index.css'
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="font-light text-5xl xl:text-7xl rounded-lg bg-ygreen m-auto lg:w-6/12 md:w-8/12 p-8 px-14">
+      <div className="mx-auto">
+      <h1 className="overflow-ellipsis overflow-hidden uppercase text-gray-700 text-center mb-2"> Pinky Gautam</h1>
+      <hr className="border-t-2"/>
+      </div>
     </div>
   );
 }
