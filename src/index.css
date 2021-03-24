@@ -3,7 +3,25 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
-h1{
-    font-family: 'Roboto Mono', monospace;
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap");
+h1 {
+  font-family: "Roboto Mono", monospace;
+}
+
+@media only screen and (max-width: 300px) {
+  h1 {
+    font-size: 10vw;
+  }
+  .paragraph-main {
+    font-size: 4vw;
+    line-height: 1.6;
+  }
+  .main {
+    padding-inline: 20px;
+  }
+  .icon {
+    width: 8vw;
+    height: 8vw;
+    margin-inline: 2vw;
+  }
 }
