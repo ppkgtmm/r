@@ -1,6 +1,6 @@
 import "./index.css";
 import { MainCard, BackgroundCard } from "./components";
-import { urls, fullName, description } from "./constants/constant";
+import { urls, fullName, description } from "./constants/constant.ts";
 
 function App() {
   return (
@@ -11,8 +11,8 @@ function App() {
         description={description}
       />
       <div className="block md:mx-10 lg:mx-20 md:grid grid-flow-col grid-cols-2 grid-rows-1 gap-3">
-        <BackgroundCard heading={"education"} />
-        <BackgroundCard heading={"experience"} />
+        <BackgroundCard bg={"bg-blue"} heading={"education"} />
+        <BackgroundCard bg={"bg-orange"} heading={"experience"} />
       </div>
     </div>
   );
