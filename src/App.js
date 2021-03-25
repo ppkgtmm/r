@@ -1,6 +1,12 @@
 import "./index.css";
 import { MainCard, BackgroundCard } from "./components";
-import { urls, fullName, description, education, experience } from "./constants/constant.ts";
+import {
+  urls,
+  fullName,
+  description,
+  education,
+  experience,
+} from "./constants/constant.ts";
 
 function App() {
   return (
@@ -11,8 +17,18 @@ function App() {
         description={description}
       />
       <div className="block md:mx-10 lg:mx-20 md:grid grid-flow-col grid-cols-2 grid-rows-1 md:gap-x-3 lg:gap-x-7 items-stretch">
-        <BackgroundCard bg={"bg-blue"} justify={"md:justify-self-end"} heading={"education"} info={education}/>
-        <BackgroundCard bg={"bg-orange"} justify={"md:justify-self-start"} heading={"experience"} info={experience}/>
+        <BackgroundCard
+          bg={"bg-blue"}
+          justify={"md:justify-self-end"}
+          heading={"education"}
+          info={education}
+        />
+        <BackgroundCard
+          bg={"bg-orange"}
+          justify={"md:justify-self-start"}
+          heading={"experience"}
+          info={experience}
+        />
       </div>
     </div>
   );
