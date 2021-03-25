@@ -1,4 +1,4 @@
-import BackgroundCard from "./BackgroundCard";
+import { BackgroundCard } from "./Background";
 import Contact from "./Contact";
 import MainCard from "./MainCard";
 
