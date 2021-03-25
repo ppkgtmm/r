@@ -16,12 +16,13 @@ h1 {
     font-size: 5vw;
     line-height: 1.6;
   }
-  .main, .background {
+  .main {
     padding-inline: 20px;
   }
   .icon {
-    width: 8vw;
-    height: 8vw;
+    width: 9vw;
+    height: 9vw;
     margin-inline: 2vw;
+    padding: 1.5vw;
   }
 }
