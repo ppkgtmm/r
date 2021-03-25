@@ -1,7 +1,7 @@
-import MainCard from "./components/MainCard";
-import BackgroundCard from './components/BackgroundCard'
 import "./index.css";
-import { urls, fullName, description } from "./constant";
+import { MainCard, BackgroundCard } from "./components";
+import { urls, fullName, description } from "./constants/constant";
+
 function App() {
   return (
     <div>
@@ -12,7 +12,7 @@ function App() {
       />
       <div className="block md:mx-10 lg:mx-20 md:grid grid-flow-col grid-cols-2 grid-rows-1 gap-3">
         <BackgroundCard heading={"education"} />
-        <BackgroundCard heading={"experience"}/>
+        <BackgroundCard heading={"experience"} />
       </div>
     </div>
   );
