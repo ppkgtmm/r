@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap");
-h1 {
+h1, h2 {
   font-family: "Roboto Mono", monospace;
 }
 
@@ -12,7 +12,10 @@ h1 {
   h1 {
     font-size: 10vw;
   }
-  .paragraph-main, .background {
+  h2{
+    font-size: 7vw;
+  }
+  .paragraph-main, .background, .skill {
     font-size: 5vw;
     line-height: 1.6;
   }
@@ -24,5 +27,19 @@ h1 {
     height: 9vw;
     margin-inline: 2vw;
     padding: 1.5vw;
+  }
+  .profile{
+    width: 50vw;
+    height: 50vw;
+    border-width: 1vw;
+  }
+  .score{
+    height: 4vw;
+    width: 4vw;
+  }
+}
+@media only screen and (max-width: 150px){
+  .score{
+    display: none;
   }
 }

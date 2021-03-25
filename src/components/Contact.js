@@ -8,7 +8,8 @@ import {
 import React from "react";
 
 export default function Contact({ urls }) {
-  const iconClassName = "mx-2 w-10 h-10 icon fill-current bg-green p-2 rounded-full";
+  const iconClassName =
+    "mx-2 w-10 h-10 icon fill-current bg-green p-2 rounded-full";
   const defaultUrl = "#";
   return !urls ? null : (
     <div className="flex justify-center mt-4 contact">

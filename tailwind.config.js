@@ -1,6 +1,6 @@
 module.exports = {
-  purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
-  darkMode: 'media', // or 'media' or 'class'
+  purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
+  darkMode: "media", // or 'media' or 'class'
   theme: {
     extend: {},
     colors: {
@@ -11,11 +11,12 @@ module.exports = {
       yellow: "#FFF5D2",
       bgrey: "#E3E7F3", // blue grey
       grey: "#E5E5E5",
-      green: "#BFE0A5"
-    }
+      green: "#BFE0A5",
+      white: "#ffffff",
+    },
   },
   variants: {
     extend: {},
   },
   plugins: [],
-}
+};
