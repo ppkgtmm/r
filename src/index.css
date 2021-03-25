@@ -8,15 +8,15 @@ h1 {
   font-family: "Roboto Mono", monospace;
 }
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 350px) {
   h1 {
     font-size: 10vw;
   }
-  .paragraph-main {
-    font-size: 4vw;
+  .paragraph-main, .background {
+    font-size: 5vw;
     line-height: 1.6;
   }
-  .main {
+  .main, .background {
     padding-inline: 20px;
   }
   .icon {

@@ -17,13 +17,13 @@ export const description: string =
 export const education: constantObject[] = [
   {
     title: "High School",
-    place: "Assumption Convent",
+    place: "Assumption Convent Bangkok",
     start: "2014",
     end: "2017",
   },
   {
     title: "computer engineering",
-    place: "king mongkut's university of techonoly thonburi",
+    place: "king mongkut's university of technology thonburi",
     start: "2017",
     end: "2021",
   },
@@ -37,7 +37,7 @@ export const experience: constantObject[] = [
     end: "aug 2020",
   },
   {
-    title: "ml & software engineering intern",
+    title: "machine learning & software engineering intern",
     place: "taskworld co., ltd",
     start: "aug 2020",
     end: "may 2021",
