@@ -5,9 +5,9 @@ import BackgroundItem from "./BackgroundItem";
 
 export default function BackgroundCard(props) {
   const BackgroundClassName =
-    "capitalize sm:w-9/12 md:w-full lg:max-w-md xl:w-9/12 max-w-lg m-auto font-light rounded-lg mt-8 md:mt-20 md:mb-0 p-8 px-14 main";
+    "capitalize sm:w-9/12 md:w-full lg:max-w-md xl:w-9/12 max-w-lg font-light rounded-lg mx-auto md:mx-0 mt-8 md:mt-20 md:mb-0 p-8 px-14 main";
   return (
-    <div className={concat([BackgroundClassName, get(props, "bg", "")])}>
+    <div className={concat([BackgroundClassName, get(props, "bg", ""), get(props, "justify", "")])}>
       <div className="mx-auto">
         <h1 className="text-2xl xl:text-3xl overflow-ellipsis overflow-hidden uppercase text-gray-700 text-center">
           {get(props, "heading", "")}
