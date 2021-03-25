@@ -1,5 +1,5 @@
 import "./index.css";
-import { MainCard, BackgroundCard } from "./components";
+import { MainCard, BackgroundCard, Skills } from "./components";
 import {
   urls,
   fullName,
@@ -29,6 +29,11 @@ function App() {
           heading={"experience"}
           info={experience}
         />
+      </div>
+      <div className="block md:mx-10 lg:mx-20 md:flex justify:center items-stretch">
+        <Skills bg={"bg-mgreen"} />
+        <Skills bg={"bg-yellow"} />
+        <Skills bg={"bg-bgrey"} />
       </div>
     </div>
   );
