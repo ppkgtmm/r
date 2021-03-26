@@ -6,12 +6,12 @@ import Score from "./Score";
 export default function Skills(props) {
   const skillClassName =
     "capitalize sm:w-9/12 md:max-w-md lg:max-w-md xl:w-9/12 max-w-lg font-light rounded-lg mx-auto md:mx-3 lg-mx-7 mt-5 md:mt-12 md:mb-0 p-8 px-14 main";
-  const backgroundColor = get(props, "info.bg", "bg-white");
+  const backgroundColor = get(props, "info.meta.bg", "bg-white");
   return !props.info ? null : (
     <div className={concat([skillClassName, backgroundColor])}>
       <h2 className="uppercase text-xl xl:text-2xl overflow-ellipsis overflow-hidden text-black-700 text-center">
         {" "}
-        {get(props, "info.heading", "")}
+        {get(props, "info.meta.heading", "")}
       </h2>
       <hr className="border-t-2 my-2" />
       <ul className="flex flex-col justify-evenly">

@@ -1,14 +1,23 @@
-interface constantObject {
+interface metaData {
+  heading: string;
+  bg?: string;
+}
+
+interface objectType {
   [key: string]: string;
 }
 
-interface skills {
-  heading: string;
-  bg: string;
+interface background {
+  meta?: metaData;
+  data: objectType[];
+}
+
+interface skill {
+  meta: metaData;
   skills: [string, number][];
 }
 
-export const urls: constantObject = {
+export const urls: objectType = {
   linkedin: "https://www.linkedin.com/in/pinky-gautam-3a7234204/",
   fb: "https://www.facebook.com/pinky.gautam.92775/",
   email: "pinky.gtmm@gmail.com",
@@ -20,40 +29,55 @@ export const fullName: string = "Pinky Gautam";
 export const description: string =
   " An enthusiastic engineering student with ability to learn fast and willingness to acquire new technological skills";
 
-export const education: constantObject[] = [
-  {
-    title: "High School",
-    place: "Assumption Convent Bangkok",
-    start: "2014",
-    end: "2017",
+export const education: background = {
+  meta: {
+    heading: "education",
+    bg: "bg-blue",
   },
-  {
-    title: "computer engineering",
-    place: "king mongkut's university of technology thonburi",
-    start: "2017",
-    end: "2021",
-  },
-];
+  data: [
+    {
+      title: "High School",
+      place: "Assumption Convent Bangkok",
+      start: "2014",
+      end: "2017",
+    },
+    {
+      title: "computer engineering",
+      place: "king mongkut's university of technology thonburi",
+      start: "2017",
+      end: "2021",
+    },
+  ],
+};
 
-export const experience: constantObject[] = [
-  {
-    title: "full-stack developer intern",
-    place: "donuts bangkok co., ltd",
-    start: "jun 2020",
-    end: "aug 2020",
+export const experience: background = {
+  meta: {
+    heading: "experience",
+    bg: "bg-orange",
   },
-  {
-    title: "machine learning & software engineering intern",
-    place: "taskworld co., ltd",
-    start: "aug 2020",
-    end: "may 2021",
-  },
-];
+  data: [
+    {
+      title: "full-stack developer intern",
+      place: "donuts bangkok co., ltd",
+      start: "jun 2020",
+      end: "aug 2020",
+    },
+    {
+      title: "machine learning & software engineering intern",
+      place: "taskworld co., ltd",
+      start: "aug 2020",
+      end: "may 2021",
+    },
+  ],
+};
 
-export const skillsData: skills[] = [
+export const skillsData: skill[] = [
   {
-    heading: "front-end",
-    bg: "bg-mgreen",
+    meta:
+    {
+      heading: "front-end",
+      bg: "bg-mgreen"
+    },
     skills: [
       ["HTML", 4],
       ["CSS", 4],
@@ -64,8 +88,11 @@ export const skillsData: skills[] = [
     ],
   },
   {
-    heading: "back-end",
-    bg: "bg-yellow",
+    meta:
+    {
+      heading: "back-end",
+      bg: "bg-yellow",
+    },
     skills: [
       ["Java", 3],
       ["Node JS", 3],
@@ -79,8 +106,11 @@ export const skillsData: skills[] = [
     ],
   },
   {
-    heading: "data",
-    bg: "bg-bgrey",
+    meta:
+    {
+      heading: "data",
+      bg: "bg-bgrey",
+    },
     skills: [
       ["MongoDB", 3],
       ["MySQL", 4],
