@@ -3,7 +3,7 @@ module.exports = {
   darkMode: "media", // or 'media' or 'class'
   theme: {
     extend: {},
-    backgroundColor: theme => ({
+    colors: {
       blue: "#E0F6F4",
       orange: "#FBE4D3",
       ygreen: "#EAF8DF", // yellow green
@@ -12,7 +12,7 @@ module.exports = {
       bgrey: "#E3E7F3", // blue grey
       grey: "#E5E5E5",
       green: "#BFE0A5",
-     })
+    },
   },
   variants: {
     extend: {},
