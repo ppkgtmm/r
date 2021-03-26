@@ -10,7 +10,7 @@ export default function MainCard(props) {
           src={require("../img/profile.jpg").default}
           alt="profile"
         />
-        <h1 className="text-4xl xl:text-5xl overflow-ellipsis overflow-hidden uppercase text-gray-700 text-center">
+        <h1 className="text-4xl xl:text-5xl overflow-ellipsis overflow-hidden uppercase text-black text-center">
           {get(props, "fullName", "")}
         </h1>
         <hr className="border-t-2 my-2" />

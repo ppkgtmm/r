@@ -15,7 +15,7 @@ export default function BackgroundCard(props) {
       ])}
     >
       <div className="mx-auto">
-        <h1 className="text-2xl xl:text-3xl overflow-ellipsis overflow-hidden uppercase text-gray-700 text-center">
+        <h1 className="text-2xl xl:text-3xl overflow-ellipsis overflow-hidden uppercase text-black text-center">
           {get(props, "heading", "")}
         </h1>
         <hr className="border-t-2 my-2" />

@@ -1,4 +1,4 @@
-import { get } from "lodash";
+import { get, orderBy } from "lodash";
 import React from "react";
 import { concat } from "../../utils/string";
 import Score from "./Score";
@@ -9,21 +9,23 @@ export default function Skills(props) {
   const backgroundColor = get(props, "info.bg", "bg-white");
   return !props.info ? null : (
     <div className={concat([skillClassName, backgroundColor])}>
-      <h2 className="uppercase text-xl xl:text-2xl overflow-ellipsis overflow-hidden text-gray-700 text-center">
+      <h2 className="uppercase text-xl xl:text-2xl overflow-ellipsis overflow-hidden text-black-700 text-center">
         {" "}
         {get(props, "info.heading", "")}
       </h2>
       <hr className="border-t-2 my-2" />
       <ul className="flex flex-col justify-evenly">
-        {(props.info.skills || []).map((skill, index) => (
-          <li
-            key={index}
-            className="leading-loose skill mx-2 flex justify-between items-center flex-wrap"
-          >
-            <p>{skill[0]}</p>
-            <Score score={skill[1]} />
-          </li>
-        ))}
+        {(orderBy(props.info.skills, "1", "desc") || []).map(
+          (skill, index) => (
+            <li
+              key={index}
+              className="leading-loose skill mx-2 flex justify-between items-center flex-wrap"
+            >
+              <p>{skill[0]}</p>
+              <Score score={skill[1]} />
+            </li>
+          )
+        )}
       </ul>
     </div>
   );
