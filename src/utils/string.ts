@@ -1,5 +1,5 @@
-import _ from "lodash";
+import { join } from "lodash";
 
-export function concat(strings: string[]) {
-  return _.join(strings, " ");
+export function concat(strings: string[], sep: string = " ") {
+  return join(strings, sep);
 }

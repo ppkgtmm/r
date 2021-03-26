@@ -2,6 +2,12 @@ interface constantObject {
   [key: string]: string;
 }
 
+interface skills {
+  heading: string;
+  bg: string;
+  skills: [string, number][];
+}
+
 export const urls: constantObject = {
   linkedin: "https://www.linkedin.com/in/pinky-gautam-3a7234204/",
   fb: "https://www.facebook.com/pinky.gautam.92775/",
@@ -43,3 +49,49 @@ export const experience: constantObject[] = [
     end: "may 2021",
   },
 ];
+
+export const skillsData: skills[] = [
+  {
+    heading: "front-end",
+    bg: "bg-mgreen",
+    skills: [
+      ["HTML", 4],
+      ["CSS", 4],
+      ["Javascript", 4],
+      ["Bootstrap", 3],
+      ["Tailwind", 3],
+      ["React JS", 4],
+    ],
+  },
+  {
+    heading: "back-end",
+    bg: "bg-yellow",
+    skills: [
+      ["Java", 3],
+      ["Node JS", 3],
+      ["Express", 3],
+      ["PHP", 3],
+      ["Laravel", 4],
+      ["Golang", 3],
+      ["Python", 4],
+      ["Typescript", 3],
+      ["Nest JS", 3],
+    ],
+  },
+  {
+    heading: "data",
+    bg: "bg-bgrey",
+    skills: [
+      ["MongoDB", 3],
+      ["MySQL", 4],
+      ["PostgreSQL", 4],
+      ["Machine Learning", 3],
+      ["Tensorflow", 4],
+      ["Pandas", 4],
+      ["Airflow", 3],
+      ["Hadoop", 3],
+    ],
+  },
+];
+
+export const fullscore: number = 5;

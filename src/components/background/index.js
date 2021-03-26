@@ -1,3 +1,3 @@
 import BackgroundCard from "./BackgroundCard";
 
-export { BackgroundCard };
+export default BackgroundCard;

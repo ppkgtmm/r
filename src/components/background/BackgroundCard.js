@@ -5,7 +5,7 @@ import BackgroundItem from "./BackgroundItem";
 
 export default function BackgroundCard(props) {
   const BackgroundClassName =
-    "capitalize sm:w-9/12 md:w-full lg:max-w-md xl:w-9/12 max-w-lg font-light rounded-lg mx-auto md:mx-0 mt-8 md:mt-20 md:mb-0 p-8 px-14 main";
+    "capitalize sm:w-9/12 md:w-full lg:max-w-md xl:w-9/12 max-w-lg font-light rounded-lg mx-auto md:mx-0 mt-4 md:mt-10 md:mb-0 p-8 px-14 main";
   return (
     <div
       className={concat([
@@ -21,8 +21,8 @@ export default function BackgroundCard(props) {
         <hr className="border-t-2 my-2" />
       </div>
       <ul className="background list-inside">
-        {get(props, "info", []).map((item) => (
-          <BackgroundItem item={item} />
+        {get(props, "info", []).map((item, index) => (
+          <BackgroundItem key={index} item={item} />
         ))}
       </ul>
     </div>
