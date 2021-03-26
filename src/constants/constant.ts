@@ -53,7 +53,7 @@ export const experience: constantObject[] = [
 export const skillsData: skills[] = [
   {
     heading: "front-end",
-    bg: "mgreen",
+    bg: "bg-mgreen",
     skills: [
       ["HTML", 4],
       ["CSS", 4],
@@ -65,7 +65,7 @@ export const skillsData: skills[] = [
   },
   {
     heading: "back-end",
-    bg: "yellow",
+    bg: "bg-yellow",
     skills: [
       ["Java", 3],
       ["Node JS", 3],
@@ -80,7 +80,7 @@ export const skillsData: skills[] = [
   },
   {
     heading: "data",
-    bg: "bgrey",
+    bg: "bg-bgrey",
     skills: [
       ["MongoDB", 3],
       ["MySQL", 4],
