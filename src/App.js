@@ -1,10 +1,6 @@
 import "./index.css";
-import { MainCard, BackgroundSection, SkillSection } from "./components";
-import {
-  urls,
-  fullName,
-  description
-} from "./constants/constant.ts";
+import { MainCard, BackgroundSection, SkillSection, ProjectSection} from "./components";
+import { urls, fullName, description } from "./constants/constant.ts";
 
 function App() {
   return (
@@ -16,7 +12,8 @@ function App() {
       />
       <BackgroundSection />
       <SkillSection />
-    </div>
+      <ProjectSection />
+      </div>
   );
 }
 

@@ -14,7 +14,7 @@ hr{
   h1 {
     font-size: 10vw;
   }
-  h2{
+  h2,h3{
     font-size: 7vw;
   }
   .paragraph-main, .background, .skill {
@@ -44,4 +44,13 @@ hr{
   .score{
     display: none;
   }
+}
+img{
+  height:100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.project{
+  width: 360px;
 }

@@ -17,6 +17,15 @@ interface skill {
   skills: [string, number][];
 }
 
+interface project{
+  name: string;
+  description: string;
+  img: {
+    src: string,
+    alt: string
+  }
+}
+
 export const urls: objectType = {
   linkedin: "https://www.linkedin.com/in/pinky-gautam-3a7234204/",
   fb: "https://www.facebook.com/pinky.gautam.92775/",
@@ -125,3 +134,54 @@ export const skillsData: skill[] = [
 ];
 
 export const fullscore: number = 5;
+
+export const projects: project[] = [
+  {
+    name: 'Books API',
+    description: 'Interface for querying, adding, editing and deleting books data',
+    img: {
+      src: 'https://firebasestorage.googleapis.com/v0/b/resume-the-work.appspot.com/o/books-api.png?alt=media&token=92c90d2e-de69-42af-8b2c-ca51c72705fd',
+      alt: 'Books API'
+    }
+  },
+  {
+    name: 'Emotion based song recommender',
+    description: 'Command line program help finding song from emotion and more with songs and emotions data you provide',
+    img: {
+      src: 'https://firebasestorage.googleapis.com/v0/b/resume-the-work.appspot.com/o/emo-based-song.png?alt=media&token=0735baa6-0e5a-4e9c-b4e8-51f793e0c82a',
+      alt: 'Emotion based song recommender'
+    }
+  },
+  {
+    name: 'Flipping game',
+    description: 'Web-based game that requires you to match blocks randomly placed in each game',
+    img: {
+      src: 'https://firebasestorage.googleapis.com/v0/b/resume-the-work.appspot.com/o/flip-game.png?alt=media&token=ac4bd76f-dfdf-4b60-9632-7a53e96f45a6',
+      alt: 'Flipping game'
+    }
+  },
+  {
+    name: 'Go now',
+    description: 'Website to help you come up with places to travel in each season',
+    img: {
+      src: 'https://firebasestorage.googleapis.com/v0/b/resume-the-work.appspot.com/o/go-now.png?alt=media&token=3ab5000b-0f67-409b-b3a4-d05d9a7b5dc4',
+      alt: 'Go now'
+    }
+  },
+  {
+    name: 'Battleship',
+    description: 'Bussiness logic and interface for wesites who want to implement battleship game with 2 players',
+    img: {
+      src: 'https://firebasestorage.googleapis.com/v0/b/resume-the-work.appspot.com/o/battleship.png?alt=media&token=b508b78d-e514-4245-8e67-0a47564991c0',
+      alt: 'Battleship'
+    }
+  },
+  {
+    name: 'Overwatch Heroes scraper',
+    description: 'Overwatch game character information extractor from game website to help in data collection',
+    img: {
+      src: 'https://firebasestorage.googleapis.com/v0/b/resume-the-work.appspot.com/o/overwatch.png?alt=media&token=25bcf8f8-207a-4225-b88e-4e4e721769a4',
+      alt: 'Battleship'
+    }
+  }
+]

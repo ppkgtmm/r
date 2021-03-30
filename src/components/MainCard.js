@@ -7,7 +7,7 @@ export default function MainCard(props) {
       <div className="mx-auto">
         <img
           className="profile w-48 h-48 rounded-full border-8 border-green md:mb-8 mx-auto"
-          src={require("../img/profile.jpg").default}
+          src={"https://firebasestorage.googleapis.com/v0/b/resume-the-work.appspot.com/o/profile.jpg?alt=media&token=8f1d1217-32b1-49c5-9f7c-d7c742aa8a53"}
           alt="profile"
         />
         <h1 className="text-4xl xl:text-5xl overflow-ellipsis overflow-hidden uppercase text-black text-center">
