@@ -170,7 +170,7 @@ export const projects: project[] = [
   },
   {
     name: 'Battleship',
-    description: 'Bussiness logic and interface for wesites who want to implement battleship game with 2 players',
+    description: 'Bussiness logic and interface for people who want to play battleship game with 2 players',
     img: {
       src: 'https://firebasestorage.googleapis.com/v0/b/resume-the-work.appspot.com/o/battleship.png?alt=media&token=b508b78d-e514-4245-8e67-0a47564991c0',
       alt: 'Battleship'
